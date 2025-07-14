@@ -49,16 +49,20 @@ INTELLIGENT_TRAFFIC_SYSTEM/
 1. Clone the repo:
 
    git clone https://github.com/MaazHussain2711/INTELLIGENT_TRAFFIC_SYSTEM.git
+
    cd INTELLIGENT_TRAFFIC_SYSTEM
 
-2. Create virtual environment:
+3. Create virtual environment:
 
 python -m venv .venv
+
 .venv\Scripts\activate  # Windows
 
 3. Install requirements:
 pip install -r requirements.txt
+
 Add your video to data/ folder and run:
+
 python main.py
 
 ---
