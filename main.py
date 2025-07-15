@@ -1,35 +1,34 @@
-# VERSION 1
+ VERSION 1
 
-# # main.py
-#
-# from ultralytics import YOLO
-# import cv2
-#
-# # Load YOLOv8 model
-# model = YOLO("yolov8n.pt")  # Use 'yolov8n.pt' for speed, or 'yolov8m.pt' for more accuracy
-#
-# # Open a sample video (or use 0 for webcam)
-# cap = cv2.VideoCapture("data/sample_video_2.mp4")  # Replace with 0 to use webcam
-#
-# while cap.isOpened():
-#     ret, frame = cap.read()
-#     if not ret:
-#         break
-#
-#     # Run YOLOv8 inference
-#     results = model(frame)[0]
-#
-#     # Draw results on frame
-#     annotated_frame = results.plot()
-#
-#     # Display result
-#     cv2.imshow("YOLOv8 Detection", annotated_frame)
-#
-#     if cv2.waitKey(1) & 0xFF == ord('q'):
-#         break
-#
-# cap.release()
-# cv2.destroyAllWindows()
+ main.py
+
+from ultralytics import YOLO
+import cv2
+
+ Load YOLOv8 model
+model = YOLO("yolov8n.pt")  # Use 'yolov8n.pt' for speed, or 'yolov8m.pt' for more accuracy
+
+ Open a sample video (or use 0 for webcam)
+cap = cv2.VideoCapture("data/sample_video_2.mp4")  # Replace with 0 to use webcam
+
+ while cap.isOpened():
+    ret, frame = cap.read()
+   if not ret:
+       break
+ Run YOLOv8 inference
+  results = model(frame)[0]
+
+ Draw results on frame
+   annotated_frame = results.plot()
+
+ Display result
+ cv2.imshow("YOLOv8 Detection", annotated_frame)
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+       break
+
+ cap.release()
+ cv2.destroyAllWindows()
 
 # ----------------------------------------------------------------------------------------------------------
 
